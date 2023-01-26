@@ -1,0 +1,99 @@
+section{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    width:400px;
+}
+article h2{
+    margin-bottom: 10px;
+    color: darkblue;
+}
+.text-nosotros .linea{
+    margin: auto;
+}
+.linea{
+    border:2px solid skyblue;
+    margin-bottom: 10px;
+    width:250px;
+}
+
+article img{
+    width:100%;
+}
+.galeria{
+    width:80%;
+    margin:20px auto;
+}
+.botones{
+    background: darkblue;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    border: 0;
+}
+.botones:focus{
+    outline:0 none;
+}
+
+.second-article{
+    display:flex;
+    align-items: center;
+}
+@media only screen and (max-width:980px){
+    .cont-banner p{
+        display:none;
+    }
+    #menu{
+        display:block;
+        float:right;
+        font-size:30px;
+        margin:15px;
+    }
+    .container{
+        width:90%;
+    }
+    .botonera{
+        float:none;
+        position: relative;
+        left:-150%;
+        transition:0.5s ease-out;
+    }
+    .click{
+        left:0%;
+        transition:0.5s ease-out;
+    }
+    .botonera ul{
+        flex-direction: column;
+        position:absolute;
+        top:70px;
+        background:rgb(88, 183, 221);
+        width:100%;
+    }
+    .botonera a{
+        border-bottom:2px solid darkblue;
+    }
+    main, section{
+        width: 90%;
+    }
+    article{
+        width: 45%;
+    }
+    #img{
+        width: 80%;
+        margin: auto;
+    }
+  
+}
+
+@media only screen and (max-width:480px){
+    main, section{
+        width: 98%;
+    }
+    article{
+        width:100%;
+    }
+}
